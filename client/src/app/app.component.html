@@ -1,0 +1,28 @@
+<!-- <div class="navbar navbar-default">
+  <div class="container">
+    <div id="navbar-main">
+      <ul class="nav navbar-nav">
+        <li><a routerLink="/">Home</a></li>
+      </ul>
+      
+      
+    </div>
+  </div>
+</div> -->
+
+<nav class="navbar navbar-light bg-light justify-content-between mb-4">
+  <a class="navbar-brand">KnockOnce</a>
+  <div class="form-inline">
+    <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+    <ul class="nav navbar-nav navbar-right">
+        <li *ngIf="!auth.isLoggedIn()"><a routerLink="/login">Sign in</a></li>
+        <li *ngIf="auth.isLoggedIn()">
+          <h3 style="margin: 0px;"><strong style="margin: 0px;"><img *ngIf="auth.getUserDetails()?.is_prime" style="height: 16px;" src="../assets/prime.png"> &nbsp; {{ auth.getUserDetails()?.name }}</strong></h3>
+        </li>
+        <li *ngIf="auth.isLoggedIn()"><a href="javascript:void(0)" (click)="auth.logout()">Logout</a></li>
+      </ul>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>

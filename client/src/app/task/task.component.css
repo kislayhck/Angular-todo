@@ -1,0 +1,27 @@
+.icon-disabled {
+    color: gray;
+    cursor: not-allowed;
+    text-decoration: underline;
+}
+
+.mat-checkbox-inner-container-no-side-margin {
+  margin-top: 5px !important;
+}
+
+.mat-checkbox-inner-container-no-side-margin {
+    background-color: #f44336 !important;
+}
+
+::ng-deep .mat-checkbox-checked.mat-accent .mat-checkbox-background, .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background, .mat-accent .mat-pseudo-checkbox-checked, .mat-accent .mat-pseudo-checkbox-indeterminate, .mat-pseudo-checkbox-checked, .mat-pseudo-checkbox-indeterminate {
+    background-color: #f44336 !important; /* Red background for example */
+    /* margin-top: 10px; */
+}
+
+
+::ng-deep .mat-checkbox-inner-container .mat-checkbox-inner-container-no-side-margin {
+    margin-top: 5px;
+}
+
+mat-checkbox label {
+    margin-top: 20px;
+}

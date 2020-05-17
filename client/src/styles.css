@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    padding: 4% 0% 4% 0%;
+  }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.example-full-width{
+    width: 100%;
+
+}
+
+i {
+  cursor: pointer;
+}
+
+.material-icons.themeColor { color: #f44336; }
+
+/* .form-padding{
+  padding: 4% 6% 6% 6%;
+} */
